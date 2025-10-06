@@ -1,7 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import profile from "./assets/profile.jpg"; // ✅ correct relative path
-
+import profile from "./assets/profile.jpg";
 export default function Header() {
   return (
     <header
@@ -13,10 +12,8 @@ export default function Header() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* 🔲 Overlay for better text visibility */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* 🔹 Content Layer */}
       <div className="relative z-10">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
           Hi, I'm <span className="text-yellow-400">Anntrauf Arshid</span>
